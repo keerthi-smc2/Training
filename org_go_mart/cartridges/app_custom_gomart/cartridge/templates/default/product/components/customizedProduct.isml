@@ -1,0 +1,15 @@
+<div class ="row canBeCustomized collapsible-xs ">
+    <isif condition= "${pdict.product.customizedMessage}">
+        <p style = "color:red"> ${pdict.product.customizedMessage} </p>
+    </isif>    
+</div>
+
+
+        
+
+
+
+
+
+
+

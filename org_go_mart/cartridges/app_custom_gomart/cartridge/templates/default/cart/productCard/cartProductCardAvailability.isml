@@ -1,0 +1,18 @@
+<div class="line-item-availability availability-${lineItem.UUID}">
+    <isloop items="${lineItem.availability.messages}" var="message">
+        <isif condition="${message == 'Pre-Order'}">
+            <p class="line-item-attributes" style="color:green">${message}</p>
+        <iselseif condition="${message == 'Back Order'}" />
+            <p class="line-item-attributes" style="color:green">${message}</p>
+        <iselseif condition="${lineItem.available == false}" />
+            <p class="line-item-attributes" style="color:red">${message}</p>
+          <iselse/>
+             <p class="line-item-attributes">${message}</p>
+        </isif> 
+    </isloop>
+    <isif condition="${lineItem.availability.inStockDate}">
+        <p class="line-item-attributes line-item-instock-date" style="color:green">
+            ${lineItem.availability.inStockDate}
+        </p>
+    </isif>
+</div>

@@ -1,0 +1,23 @@
+<form action="${URLUtils.url('Account-SaveLoyaltyInfo')}" class="change-loyalty-form" method="POST">
+
+    <div class="form-group" style= "display: flex; justify-content: left; align-items: center;">
+        <label class="form-control-label" for="loyaltySignup">
+            <isprint value="${pdict.profileForm.customer.loyaltySignup.label}" encoding="htmlcontent" />
+        </label>
+
+        <input type="checkbox" class="form-control" style= "width:30%; height:20px" id="loyaltySignup" name="loyaltySignup" <isprint value="${pdict.profileForm.customer.loyaltySignup.checked ? 'checked' : ''}" encoding="off" /> />
+        <div class="invalid-feedback"></div>
+    </div>
+
+    <input type="hidden" name="${pdict.csrf.tokenName}" value="${pdict.csrf.token}" />
+
+    <div class="row">
+        <div class="col">
+            <a href="${URLUtils.url('Account-Show')}" class="btn btn-block btn-outline-primary"> ${Resource.msg('button.cancel', 'account', null)}</a>
+        </div>
+
+        <div class="col">
+            <button type="submit" name="save" class="btn btn-save btn-block btn-primary"> ${Resource.msg('button.save', 'account', null)}</button>
+        </div>
+    </div>
+</form>

@@ -1,0 +1,10 @@
+<li class="nav-item" data-method-id="${paymentOption.ID}">
+    <a class="nav-link" data-toggle="tab" href="#cod-content" role="tab">
+        <img class="cod-option"
+                src="${URLUtils.staticURL('/images/cod.jpg')}"
+                height="32"
+                alt="${paymentOption.name}"
+                title="${paymentOption.name}"
+        >
+    </a>
+</li>

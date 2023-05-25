@@ -1,0 +1,3 @@
+<div class="tab-pane cod-content" id="cod-content" role="tabpanel">
+   ${Resource.msg('cod.msg', 'checkout', null)}
+</div>

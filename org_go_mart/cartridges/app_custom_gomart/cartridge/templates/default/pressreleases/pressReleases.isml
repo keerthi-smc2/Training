@@ -1,0 +1,11 @@
+<isdecorate template="common/layout/page">
+    <isinclude template="components/modules" />
+    <isinclude template="components/breadcrumbs/pageBreadcrumbs"/>
+    <iscontentasset aid="press-release-main"/>
+    <h1 style="text-align:center";>Leadership team changes</h1>
+    <p>The new Cheif Executive Officer is <b>${pdict.ceo}</b> and vice president is <b>${pdict.vp}</b></p>
+    <h3>About ${pdict.ceo}</h3>
+    <iscontentasset aid="pressReleases-ceo-details" />
+    <h3>About ${pdict.vp}</h3>
+    <iscontentasset aid="pressReleases-vp-details" />
+</isdecorate>

@@ -1,0 +1,5 @@
+<isdecorate template="common/layout/page">
+    <p>Thank you ${pdict.name} for your valuable feedback</p>
+    <p>Your Email: ${pdict.email} </p>
+    <p>Your Feedback: ${pdict.feedback}</p>
+</isdecorate>

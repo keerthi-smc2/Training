@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<form xmlns="http://www.demandware.com/xml/form/2008-04-19">
+	<field formid="provinceCode" label="label.input.province" type="string" mandatory="false" binding="provinceCode" missing-error="address.province.missing" value-error="address.field.invalid" parse-error="error.message.required">
+		<options>
+			<option optionid="" 	label="resource.select" 		value=""/>
+
+                <option optionid="AL" 	label="province.ca.alberta" 		value="AL"/>
+			    <option optionid="MN" 	label="province.ca.manitoba" 		value="MN"/>
+			    <option optionid="NB" 	label="province.ca.newbrunswick" 	value="NB"/>
+			    <option optionid="NS" 	label="province.ca.novascotia"   	value="NS"/>
+			    <option optionid="ON" 	label="province.ca.ontario" 		value="ON"/>
+		</options>
+	</field>
+</form>	

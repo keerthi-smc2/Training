@@ -1,0 +1,16 @@
+<isdecorate template="common/layout/page">
+    <isscript>
+        var assets = require('*/cartridge/scripts/assets.js');
+        assets.addJs('js/feedback.js');
+    </isscript>
+    <h1 style="text-align:center">Feedback Form</h1>
+    <form action="${pdict.actionUrl}" class="demo" method="POST">
+        <label>Name</label>
+        <input type="text" name="loginName" id="name"/></br>
+        <label>Email</label>
+        <input type="text" name="loginEmail" id="email"/></br>
+        <label>Feedback</label></br>
+        <textarea name="feedback" id="feedbacks"></textarea></br>
+        <input type="submit" class="btn-primary"/>
+    </form>
+</isdecorate>

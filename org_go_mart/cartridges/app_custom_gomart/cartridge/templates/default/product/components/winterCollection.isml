@@ -1,0 +1,17 @@
+<div class="row winterCollection collapsible-xs ">
+    <isif condition= "${pdict.product.winterCollectionbanner}">
+        <p> ${pdict.product.winterCollectionbanner} </p>
+  </isif>    
+</div>
+
+
+
+
+
+
+
+
+
+
+
+

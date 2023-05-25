@@ -1,0 +1,32 @@
+<li class="col-sm-4 col-md-12 ${!refinementValue.selectable ? 'disabled' : ''}">
+    <button data-href="${refinementValue.url}" class="${!refinementValue.selectable ? 'disabled' : ''}" <isif condition="${!refinementValue.selectable}">disabled</isif>>
+        <iscomment>Checkbox</iscomment>
+        <isif condition="${refinementValue.selected && refinementValue.selectable}">
+            <i class="fa fa-check-square"></i>
+        <iselse>
+            <i class="fa fa-square-o"></i>
+        </isif>
+
+        <iscomment>Label</iscomment>
+        <isif condition ="${refinementValue.id !== "customerRating"}">
+            <span class="<isif condition="${refinementValue.selected && refinementValue.selectable}">selected</isif>" aria-hidden="true">
+                ${refinementValue.displayValue}
+            </span> 
+        <iselse>
+            <isloop items="${[1, 2, 3, 4, 5]}" var="star">
+                <i class="fa
+                    <isif condition="${refinementValue.displayValue >= star}">
+                        fa-star
+                    <iselseif condition="${(displayValue.displayValue % 1 > 0) && (Math.ceil(refinementValue.displayValue) >= star)}">
+                        fa-star
+                    </isif>
+                    " aria-hidden="true">
+                </i>
+            </isloop>
+       </isif>
+        <span class="sr-only selected-assistive-text">
+            ${refinementValue.selected && refinementValue.selectable ? Resource.msg('msg.assistive.selected.text', 'common', null) : ''}
+            ${refinementValue.title}
+        </span>
+    </button>
+</li>
